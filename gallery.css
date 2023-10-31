@@ -5,6 +5,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #ced6e0;
 }
 
 .material-icons{
@@ -30,7 +31,6 @@ body {
 }
 
 .gallery-cont {
-    background-color: #ced6e0;
     height: 100%;
     width: 100%;
     display: flex;

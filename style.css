@@ -79,7 +79,7 @@ video {
     display: flex;
     align-items: center;
     justify-content: center;
-    visibility: visible;
+    visibility: hidden;
 }
 
 
