@@ -2,8 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
     <link rel="stylesheet" href="style.css" />
     <title>Camera Gallery</title>
   </head>
@@ -24,6 +23,7 @@
       <div class="capture-btn-cont">
         <div class="capture-btn"></div>
       </div>
+      
     </div>
 
     <div class="filter-cont">
@@ -37,6 +37,12 @@
 
     <span class="material-icons gallery">collections</span>
 
+    <script>
+      if (/Mobi|Android/i.test(navigator.userAgent)) {
+          // Force user-scalable to yes to prevent automatic scaling
+          document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=device-width, initial-scale=1.0, user-scalable=yes');
+      }
+  </script>
     <script src="https://cdn.jsdelivr.net/npm/short-unique-id@latest/dist/short-unique-id.min.js"></script>
     <script src="./db.js"></script>
     <script src="./index.js"></script>
